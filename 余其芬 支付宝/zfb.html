@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/zfb.css">
+</head>
+<body>
+	<div class="box boxx">
+		<div class="mean">
+			<div class="pec">
+				<img src="2.jpg" alt="">
+				<img src="3.jpg" alt="">
+				<img src="4.jpg" alt="">
+			</div>
+			<div class="me-t">
+				<div class="me">
+					<img src="js/1.png" alt="">
+					<div class="dl">
+						<span>我已有支付宝账户</span>
+						<a href="">快速登录</a>
+					</div>
+				</div>
+			</div>
+			<div class="me-b">
+				<div class="zx"></div>
+				<ul>
+					<li><i></i>我是合作伙伴</li>
+					<li class='l1'><p><i></i>我是支付宝商家</p>
+						<div class='d1'>
+							<span>我是支付宝商家</span>
+							<span>我是口碑商家</span>
+						</div>
+					</li>
+					<li><i></i>我是个人用户</li>
+				</ul>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="d2">
+				<ul>
+					<li>蚂蚁金服集团</li><span>|</span>
+					<li>支付宝</li><span>|</span>
+					<li>余额宝</li><span>|</span>
+					<li>招财宝</li><span>|</span>
+					<li>蚂蚁商家中心</li><span>|</span>
+					<li>芝麻信用</li><span>|</span>
+					<li>蚂蚁微贷</li><span>|</span>
+					<li>网商银行</li><span>|</span>
+					<li>开放平台</li><span>|</span>
+					<li>诚征英才</li><span>|</span>
+					<li>联系我们</li><span>|</span>
+					<li>International Business</li>
+				</ul>
+			</div>
+			
+			<span>沪ICP备15027489号</span>
+			<div class="jl">
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+			</div>
+		</div>
+	</div>
+	<script>
+		var pec=document.getElementsByClassName('pec')[0];
+		var img1=pec.getElementsByTagName('img')
+		console.log(img1)
+
+		var time=setInterval(run,3000)
+		var num=0;
+		function run(){
+			
+			for(var i=0;i<img1.length;i++){
+				img1[i].style.opacity=0;
+			}
+			if(num==3){
+				num=0;
+			}
+			img1[num].style.opacity=1;
+			num++;
+		}
+	</script>
+</body>
+</html>
